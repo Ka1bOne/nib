@@ -8,13 +8,13 @@ A tiny alternative to Nano
 ### macOS / Linux
 
 ```sh
-curl -fL https://github.com/Ka1bOne/nib/releases/latest/download/install.py -o install-nib.py && python3 install-nib.py
+curl -fsSL https://github.com/Ka1bOne/nib/releases/latest/download/install.py | python3 -
 ```
 
 ### Windows PowerShell
 
 ```powershell
-curl.exe -fL https://github.com/Ka1bOne/nib/releases/latest/download/install.py -o install-nib.py; if ($LASTEXITCODE -eq 0) { py -3 install-nib.py }
+(Invoke-RestMethod 'https://github.com/Ka1bOne/nib/releases/latest/download/install.py') | py -3 -
 ```
 
 > [!TIP]
